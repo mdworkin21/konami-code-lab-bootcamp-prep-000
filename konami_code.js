@@ -2,26 +2,25 @@ const code = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
 
 
 
+
+
 function init(){
   const body = document.getElementsByTagName('body')
-
-
+  
+  
   let index = 0
   let key = document.body.addEventListener('keydown', function(e){
-
-  if (e.which === code[index]){
-    while (key === code[index]){
-      index++
-
-      if (e.which ===code.length){
-        alert("YAY!")
+    
+    if (e.which === code[index]){
+        index++
+        
+        if (e.which ===code.length){
+          alert("YAY!")
+        }
       }
-    }
-  } else{
-    index = 0
-  }})
-
-}
+    } else{
+      index = 0
+    })}
 
 
 init()
