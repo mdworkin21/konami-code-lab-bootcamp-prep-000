@@ -7,7 +7,7 @@ function init(){
 
 
   let index = 0
-  let key = document.body.addEventListener("keyboardEvent", function(e){
+  let key = document.body.addEventListener('keydown', function(e){
 
   if (e.which === code[index]){
     while (key === code[index]){
