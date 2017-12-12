@@ -18,9 +18,9 @@ function init(){
           alert("YAY!")
         }
       }
-    } else{
+     else{
       index = 0
-    })}
+    }})}
 
 
 init()
