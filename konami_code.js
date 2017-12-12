@@ -12,11 +12,10 @@ function init(){
   let key = document.body.addEventListener('keydown', function(e){
 
     if (e.which === code[index]){
-        for (let i = 0; i< code.length; i){
-          code[index]++
-        }
+        index++
 
-        if (e.which ===code.length){
+
+        if (index ===code.length){
           alert("YAY!")
           console.log("Got it")
         }
