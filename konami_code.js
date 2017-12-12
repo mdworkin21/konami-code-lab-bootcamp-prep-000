@@ -2,13 +2,13 @@ const code = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
 
 function init(){
   const keyboardEvent = document.createEvent("KeyboardEvent")
+  
   const body = document.querySelector('body')
-
 
   let index = 0
   document.body.addEventListener('keydown', function(e){
 
-    if (e.which === code[index]){
+    if (parseInt(e.which || e.detail) === code[index]){
         index++
 
         if (index ===code.length){
@@ -20,7 +20,7 @@ function init(){
       index = 0
     }})}
 
-    init('keyboardEvent')
+    init()
 
 
 
