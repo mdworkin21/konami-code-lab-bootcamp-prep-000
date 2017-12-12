@@ -7,7 +7,7 @@ const body = document.getElementsByTagName('body')
 let index = 0
 
 function init(e){
-  let key = e.which;
+  let key = e.keydown;
 
   if (key === code[index]){
     while (key === code[index]){
