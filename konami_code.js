@@ -12,7 +12,9 @@ function init(){
   let key = document.body.addEventListener('keydown', function(e){
 
     if (e.which === code[index]){
-        code[index]++
+        for (let i = 0; i< code.length; i){
+          code[index]++
+        }
 
         if (e.which ===code.length){
           alert("YAY!")
