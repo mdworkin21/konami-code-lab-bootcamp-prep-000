@@ -7,23 +7,22 @@ const body = document.getElementsByTagName('body')
 let index = 0
 
 function init(){
-  let key = parseInt(keydown.key);
+  let key = body.addEventListener("keydown", function(e){
 
-  if (key === code[index]){
+  if (e.which === code[index]){
     while (key === code[index]){
       index++
 
-      if (key ===code.length){
+      if (e.which ===code.length){
         alert("YAY!")
       }
     }
   } else{
     index = 0
-  }
+  }})
 
 }
 
-document.body.addEventListener("keydown", init)
 
 
 
