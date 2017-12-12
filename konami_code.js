@@ -6,8 +6,8 @@ const body = document.getElementsByTagName('body')
 
 let index = 0
 
-function init(){
-  let key = keydown.key;
+function init(e){
+  let key = e.which;
 
   if (key === code[index]){
     while (key === code[index]){
