@@ -1,23 +1,27 @@
 const code = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
 
 
-const getElement = document.getElementsByTagName('body')
+const body = document.getElementsByTagName('body')
+document.addEventListener("keydown", init)
 
 let index = 0
 
-function init(e){
+function init(){
+  let key = keydown.key;
 
-  if (code[index] === e.which || code[index] === e.detail){
-    index++
+  if (key === code[index]){
+    while (key === code[index]){
+      index++
 
-  if (index === code.length){
-    alert("Yay!")
+      if (key ===code.length){
+        alert("YAY!")
+      }
+    }
+  } else{
     index = 0
-  } else {
-    index = 0
-  }}}
-
-document.addEventListener("keydown", init)
+  }
+  
+}
 
 
 
