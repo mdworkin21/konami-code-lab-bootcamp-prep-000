@@ -16,6 +16,7 @@ function init(){
 
         if (e.which ===code.length){
           alert("YAY!")
+          console.log("Got it")
         }
       }
      else{
